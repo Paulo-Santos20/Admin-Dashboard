@@ -13,7 +13,7 @@ export async function POST(
     const { name } = body;
 
     if (!userId) {
-      return new NextResponse("Sem autorização", { status: 403 });
+      return new NextResponse("Sem acesso", { status: 403 });
     }
 
     if (!name) {
@@ -30,6 +30,6 @@ export async function POST(
     return NextResponse.json(store);
   } catch (error) {
     console.log('[STORES_POST]', error);
-    return new NextResponse("Erro interno", { status: 500 });
+    return new NextResponse("Erro Interno", { status: 500 });
   }
 };
