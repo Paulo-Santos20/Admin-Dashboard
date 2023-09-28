@@ -20,11 +20,14 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="pt-br">
+        <head>
+          <link rel="icon" href="/favicon.ico" />
+        </head>
         <body className={inter.className}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem >
-          <ToastProvider />
-          <ModalProvider />
-          {children}
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <ToastProvider />
+            <ModalProvider />
+            {children}
           </ThemeProvider>
         </body>
       </html>

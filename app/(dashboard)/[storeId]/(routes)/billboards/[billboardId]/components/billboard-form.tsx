@@ -45,7 +45,7 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const title = initialData ? 'Edit billboard' : 'Criar painel principal';
+  const title = initialData ? 'Editar billboard' : 'Criar painel principal';
   const description = initialData ? 'Editar painel principal.' : 'Adicionar um novo painel principal';
   const toastMessage = initialData ? 'Painel principal atualizado.' : 'Painel principal criado.';
   const action = initialData ? 'Salvar Mudanças' : 'Criar';
