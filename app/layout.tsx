@@ -21,7 +21,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="pt-br">
         <head>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="favicon" href="/favicon.ico" />
         </head>
         <body className={inter.className}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
